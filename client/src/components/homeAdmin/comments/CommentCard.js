@@ -105,7 +105,7 @@ const CommentCard = ({children, comment, post, commentId}) => {
                             {
                                 content.length > 100 &&
                                 <span className="readMore" onClick={() => setReadMore(!readMore)}>
-                                    {readMore ? 'Hide content' : 'Read more'}
+                                    {readMore ? 'Masquer le contenu' : 'Lire plus'}
                                 </span>
                             }
                         </div>
@@ -118,7 +118,7 @@ const CommentCard = ({children, comment, post, commentId}) => {
                         </small>
 
                         <small className="font-weight-bold mr-3">
-                            {comment.likes.length} likes
+                            {comment.likes.length} Aime
                         </small>
 
                         {
@@ -126,17 +126,17 @@ const CommentCard = ({children, comment, post, commentId}) => {
                             ? <>
                                 <small className="font-weight-bold mr-3"
                                 onClick={handleUpdate}>
-                                    update
+                                    mise à jour
                                 </small>
                                 <small className="font-weight-bold mr-3"
                                 onClick={() => setOnEdit(false)}>
-                                    cancel
+                                    Annuler
                                 </small>
                             </>
 
                             : <small className="font-weight-bold mr-3"
                             onClick={handleReply}>
-                                {onReply ? 'cancel' :'reply'}
+                                {onReply ? 'Anule' :'Répondre'}
                             </small>
                         }
                         

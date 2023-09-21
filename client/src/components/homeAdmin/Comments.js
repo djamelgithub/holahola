@@ -33,14 +33,14 @@ const Comments = ({post}) => {
                 ? <div className="p-2 border-top"
                 style={{cursor: 'pointer', color: 'crimson'}}
                 onClick={() => setNext(next + 10)}>
-                    See more comments...
+                    Voir plus de commentaires...
                 </div>
 
                 : comments.length > 2 &&
                 <div className="p-2 border-top"
                 style={{cursor: 'pointer', color: 'crimson'}}
                 onClick={() => setNext(2)}>
-                    Hide comments...
+                    Masquer les commentaires...
                 </div>
             }
         </div>
