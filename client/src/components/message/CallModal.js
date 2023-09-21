@@ -204,8 +204,8 @@ const CallModal = () => {
                         : <div>
                             {
                                 call.video
-                                ? <span>Apell video...</span>
-                                : <span>Apell audio...</span>
+                                ? <span>Appel video...</span>
+                                : <span>Appel audio...</span>
                             }
                         </div>
                     }
@@ -225,7 +225,7 @@ const CallModal = () => {
                 <div className="call_menu">
                     <button className="material-icons text-danger"
                     onClick={handleEndCall}>
-                        call_end
+                        Fin 
                     </button>
                     
                     {
@@ -235,11 +235,11 @@ const CallModal = () => {
                                 call.video
                                 ? <button className="material-icons text-success"
                                 onClick={handleAnswer}>
-                                    videocam
+                                    video cammera
                                 </button>
                                 : <button className="material-icons text-success"
                                 onClick={handleAnswer}>
-                                    Apell
+                                    Appel
                                 </button>
                             }
                         </>
